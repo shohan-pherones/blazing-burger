@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Burgers from "./components/Burgers";
 import Footer from "./components/Footer";
+import Burger from "./components/Burger";
 
 const App = () => {
   return (
@@ -15,6 +16,9 @@ const App = () => {
         </Route>
         <Route path="/burgers">
           <Burgers />
+        </Route>
+        <Route path="/burger/:id">
+          <Burger />
         </Route>
       </Switch>
       <Footer />
